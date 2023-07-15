@@ -1,1 +1,1 @@
-# alittlepong
+# A little game of Pong
