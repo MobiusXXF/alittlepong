@@ -97,10 +97,12 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1 # reverses direction of the ball
+        os.system("afplay bounce.mp3&")
     
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1 # reverses direction of the ball
+        os.system("afplay bounce.mp3&")
 
     # could later change to add scoring on misses
     if ball.xcor() > 390:
