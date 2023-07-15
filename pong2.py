@@ -123,7 +123,10 @@ while True:
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40): 
         ball.setx(340)
         ball.dx *= -1
+        os.system("afplay bounce.mp3&")
+
     
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() -40): 
         ball.setx(-340)
         ball.dx *= -1
+        os.system("afplay bounce.mp3&")
